@@ -16,7 +16,6 @@ body {
 
 .App {
   width: 400px;
-  height: 600px;
   margin: 50px auto;
   background-color: #fff;
   border-radius: 30px;
@@ -53,6 +52,7 @@ body {
   overflow: auto;
   height: calc(100% - 130px);
   margin-top: 30px;
+  margin-bottom: 20px;
 
   li {
     display: flex;
@@ -133,6 +133,16 @@ body {
   &:active {
     transform: translateY(2px);
     box-shadow: none;
+  }
+
+  &:disabled {
+    background-color: #969696 !important;
+    box-shadow: none;
+    cursor:not-allowed;
+  }
+
+  &:active {
+    transform: translateY(0);
   }
 }
 
